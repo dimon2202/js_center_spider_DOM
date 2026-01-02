@@ -4,7 +4,8 @@
 const wall = document.querySelector('.wall');
 const spider = document.querySelector('.spider');
 
-const way = (wall.clientWidth - spider.clientWidth) / 2;
+const distanceToLeft = (wall.clientWidth - spider.clientWidth) / 2;
+const distanceToTop = (wall.clientHeight - spider.clientHeight) / 2;
 
-spider.style.left = way + 'px';
-spider.style.top = way + 'px';
+spider.style.left = distanceToLeft + 'px';
+spider.style.top = distanceToTop + 'px';
